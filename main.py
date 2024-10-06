@@ -136,7 +136,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$links'):
+    if message.content.startswith('$link'):
         embed = discord.Embed(
             title="Server Link",
             description="Join the server! https://discord.gg/XGWyDmD2NK",
@@ -181,7 +181,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 try:
-  token = os.getenv("TOKEN") or ""
+  token = os.getenv("TOKEN") or "" 
   if token == "":
     raise Exception("Please add your token to the Secrets pane.")
   client.run(token)
