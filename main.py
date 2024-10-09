@@ -175,7 +175,8 @@ async def on_message(message):
         uptime_string = time.strftime("%H:%M:%S", time.gmtime(uptime))
         embed = discord.Embed(
             title="Bot Stats",
-            description=f"**Uptime:** {uptime_string}\n**Commands:** 5\n **Servers in:** 4\n **Status:** Active\n **Commands:** 5\n this May be outdated.",
+            description=f"**Uptime:** {uptime_string}:arrow_up:\n**Commands:** 5:computer:\n **Servers in:** 6:mechanic:\n **Status:** Active:green_circle:\n\n this May be outdated.:tickets:",
+
             color=0x00ff00,
         )
         await message.channel.send(embed=embed)
@@ -195,3 +196,5 @@ except discord.HTTPException as e:
         )
     else:
         raise e
+
+
