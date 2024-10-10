@@ -171,7 +171,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith('$stats'):
-        uptime = time.time() - start_time
+        uptime = time.time() - start_time 
         uptime_string = time.strftime("%H:%M:%S", time.gmtime(uptime))
         embed = discord.Embed(
             title="Bot Stats",
@@ -196,5 +196,3 @@ except discord.HTTPException as e:
         )
     else:
         raise e
-
-
