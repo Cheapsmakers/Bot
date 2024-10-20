@@ -160,7 +160,7 @@ async def on_message(message):
         uptime_string = time.strftime("%H:%M:%S", time.gmtime(uptime))
         embed = discord.Embed(
             title="Bot Stats",
-            description=f"**Uptime:** {uptime_string}:arrow_up:\n**Commands:** 5:computer:\n **Servers in:** 8:mechanic:\n **Status:** Active:green_circle:\n\n this May be outdated.:tickets:",
+            description=f"**Uptime:** {uptime_string}:arrow_up:\n**Commands:** 6:computer:\n **Servers in:** 8:mechanic:\n **Status:** Active:green_circle:\n\n this May be outdated.:tickets:",
 
             color=0x00ff00,
         )
