@@ -151,7 +151,7 @@ async def on_message(message):
         embed = discord.Embed(
             title="Invite Link",
             description="Invite me to your server! [invite me here](https://discord.com/oauth2/authorize?client_id=1292079030484471849&permissions=380104694785&integration_type=0&scope=bot)",
-            color=0x00ff00,
+            color=0x00f2f00,
         )
         await message.channel.send(embed=embed)
 
@@ -160,13 +160,13 @@ async def on_message(message):
         uptime_string = time.strftime("%H:%M:%S", time.gmtime(uptime))
         embed = discord.Embed(
             title="Bot Stats",
-            description=f"**Uptime:** {uptime_string}:arrow_up:\n**Commands:** 6:computer:\n **Servers in:** 8:mechanic:\n **Status:** Active:green_circle:\n\n this May be outdated.:tickets:",
+            description=f"**Uptime:** {uptime_string}:arrow_up:\n**Commands:** 6:computer:\n **Servers in:** 9:mechanic:\n **Status:** Active:green_circle:\n\n this May be outdated.:tickets:",
 
             color=0x00ff00,
         )
         await message.channel.send(embed=embed)
 
- 
+
 
     if message.content.startswith('$joke'):
         random_joke = random.choice(jokes)
